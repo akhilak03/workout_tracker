@@ -23,21 +23,17 @@ function Login() {
     })
     .catch((error) => alert("something went wrong while login "));
     if (userCredobj.userType === "user") {
-      navigate("/Event")
+      navigate("/DailyTarget")
     }
 
-    if(userCredobj.userType === "admin") {
-      navigate("/HostEvent")
-     
-      // dispatch(userLogin(userCredentialsObject));
-    }
+    
 
   }
  
   //this has to be excecuted when ever issucces or isError is changed
   useEffect(()=>{
     if(isSuccess){
-      navigate("/Event") ;     
+      navigate("/DailyTarget") ;     
     }
   },[isSuccess,isError]);
   return (

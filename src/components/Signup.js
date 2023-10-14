@@ -33,19 +33,7 @@ function Signup() {
         //console.log(response)
         alert(response.data.message);
         if (response.data.message === "new user Created!!") {
-            let exerciseData = {
-                username: userobj.username,
-                exerc: [],
-                date: [],
-                status:[] 
-            }
             
-            axios
-            .post("http://localhost:4000/exercise/create-exercise", exerciseData)
-            .then((response) => { 
-              console.log("Exercise created");
-            })
-            .catch((error) => alert("something went wrong"));
             navigate("/login");
         } 
       })

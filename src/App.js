@@ -1,5 +1,6 @@
 import {Route,Routes,Link} from 'react-router-dom';
 import './App.css';
+import DailyTarget from './components/DailyTarget';
 import Signup from './components/Signup';
 import Login from './components/Login';
 import {useNavigate} from 'react-router-dom';
@@ -24,7 +25,8 @@ function App() {
      <Routes>
       
        <Route path="/Login" element={<Login/>}/>      
-       <Route path="/Signup" element={<Signup/>}/>         
+       <Route path="/Signup" element={<Signup/>}/>      
+       <Route path="/DailyTarget" element={<DailyTarget/>}/>         
      </Routes>
     </div>
   );
