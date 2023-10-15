@@ -25,9 +25,6 @@ function Login() {
     if (userCredobj.userType === "user") {
       navigate("/DailyTarget")
     }
-
-    
-
   }
  
   //this has to be excecuted when ever issucces or isError is changed

@@ -13,7 +13,6 @@ export const userLogin=createAsyncThunk('loginuser',async(userCredobj,thunkApi)=
   }
 })
 
-
 let userSlice=createSlice({
     name:"user",
     initialState:{

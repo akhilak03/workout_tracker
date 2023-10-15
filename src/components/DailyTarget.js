@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import moment from 'moment'
 import Exercise from "./Exercise";
+
 function DailyTarget() {
   const {
     register,
@@ -76,9 +77,6 @@ function DailyTarget() {
               <p className="text-danger"> *sets is required</p>
             )}
           </Form.Group>
-
-
-
 
           <Button variant="primary" type="submit">
             Add Exercise
